@@ -4,6 +4,7 @@ import { ConteudoSocios } from "@/app/src/Utils/Conteudo";
 import { useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { motion } from "framer-motion"; // Importando o framer-motion para animações
+import Image from "next/image";
 
 function Socios() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,11 +28,11 @@ function Socios() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 1, ease: "linear" }}
-                            key={currentIndex} className="w-auto items-start justify-center flex flex-col gap-3 h-full">
+                            key={currentIndex} className="w-full items-start justify-center flex flex-col gap-3 h-full">
 
 
-                            <div className="h-[100px] w-[100px] rounded-xl bg-white shadow-sm">
-
+                            <div style={{backgroundImage:`url(${ConteudoSocios[currentIndex].foto})`}} className=" w-[150px] bg-cover bg-center h-[150px] border rounded-full  shadow-md">
+                                {/* <Image style={{width:"100%"}} className="  object-contain rounded-full" src={ConteudoSocios[currentIndex].foto} alt="Socio(a)" width={10} height={10} /> */}
                             </div>
                             <div
                                 className="flex flex-col h-auto">

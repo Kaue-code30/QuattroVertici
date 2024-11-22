@@ -1,9 +1,9 @@
 import { EmpresasInvestidas } from "@/app/src/Utils/Conteudo";
-import { data, li } from "motion/react-client";
 import Link from "next/link";
 import { useState } from "react";
 import { HiOutlineLink } from "react-icons/hi";
 import banner from "@/app/src/Home/Assets/bannerVertici.jpg"
+import { motion } from "framer-motion"; // Importando o framer-motion para animações
 import Image from "next/image";
 
 function Investidores() {
@@ -28,9 +28,13 @@ function Investidores() {
                 </ul>
 
                 <div className="h-auto lg:h-[650px] flex flex-col lg:flex-row gap-3 py-5 lg:py-10 w-full ">
-                    <div className="lg:w-1/2 flex gap-2 flex-col h-full">
-                        <div className="w-28 h-28 mb-2 rounded-2xl shadow bg-black">
-
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        key={currentIndex - 1}
+                        transition={{ duration: 1, ease: "linear" }} className="lg:w-1/2 flex gap-2 flex-col h-full">
+                        <div className="w-28 flex items-center justify-center h-28 mb-2 rounded-2xl shadow bg-black">
+                            <Image priority className="w-4/5" src={EmpresasInvestidas[currentIndex].logo} alt="Logo Empresa" width={100} height={100} />
                         </div>
                         <h2 className="text-lg">
                             {EmpresasInvestidas[currentIndex].nome}
@@ -38,14 +42,17 @@ function Investidores() {
                         <h3 className="text-gray-500 text-sm">
                             {EmpresasInvestidas[currentIndex].areaAtuacao}
                         </h3>
-                        <p className="lg:w-4/5">
+                        <p className="lg:w-[90%]">
                             {EmpresasInvestidas[currentIndex].description}
                         </p>
-                        <Link className="text-blue-500 flex items-center gap-2" href={EmpresasInvestidas[currentIndex].link}>Conheça mais sobre essa empresa <HiOutlineLink /> </Link>
-                    </div>
-                    <div className="lg:w-1/2 lg:flex hidden border  shadow">
+                        <Link target="_blank" className="text-blue-500 flex items-center gap-2" href={EmpresasInvestidas[currentIndex].link}>Conheça mais sobre essa empresa <HiOutlineLink /> </Link>
+                    </motion.div>
+                    <motion.div initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        key={currentIndex}
+                        transition={{ duration: 0.8, ease: "linear" }} className="lg:w-1/2 lg:flex hidden border  shadow">
                         <Image width={100} height={100} className="bg-cover w-full h-full  object-cover" src={banner.src} alt="" />
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>

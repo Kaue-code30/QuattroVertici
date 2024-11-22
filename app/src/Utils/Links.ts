@@ -1,3 +1,27 @@
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+
+
+interface LinksRedesProps {
+    icon: any,
+    link: string
+}
+
+
+export const RedeSocial: LinksRedesProps[] = [
+    {
+        icon: FaInstagram,
+        link: "/"
+    },
+    {
+        icon: FaFacebook,
+        link: "/"
+    },
+]
+
+
+
+
 interface LinksHeaderProps {
     text: string,
     link: string
@@ -23,6 +47,7 @@ const LinksHeader: LinksHeaderProps[] = [
 ]
 
 export default LinksHeader;
+
 
 
 // <div className="max-w-[1200px] h-full flex flex-col items-start gap-3 justify-start w-full ">

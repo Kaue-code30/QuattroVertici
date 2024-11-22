@@ -20,7 +20,7 @@ function Investidores() {
                     {
                         EmpresasInvestidas.map((data, key) => (
 
-                            <li onClick={() => setCurrentIndex(key)} key={key} className={`w-[200px] ${currentIndex === key ? "border-b-2 border-black" : ""} transition duration-300  cursor-pointer flex items-center justify-center text-black h-12 rounded-t-lg`}>
+                            <li onClick={() => setCurrentIndex(key)} key={key} className={`w-[200px] ${currentIndex === key ? "border-b-[3px] text-black font-medium border-black" : "text-gray-500 font-normal"} transition duration-300  cursor-pointer flex items-center justify-center  h-12 rounded-t-lg`}>
                                 {data.nome}
                             </li>
                         ))
@@ -47,7 +47,6 @@ function Investidores() {
                         <Image width={100} height={100} className="bg-cover w-full h-full  object-cover" src={banner.src} alt="" />
                     </div>
                 </div>
-
             </div>
         </section>
     )

@@ -6,6 +6,7 @@ import AboutUs from "./src/Home/Components/AboutUs";
 import QuebraConteudo from "./src/Home/Components/QuebraDeConteudo";
 import Socios from "./src/Home/Components/Socios";
 import Investidores from "./src/Home/Components/Investimentos";
+import Contact from "./src/Home/Components/Contact";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Socios />
       <QuebraConteudo bannerSource={banner.src} />
       <Investidores/>
+      <Contact/>
     </>
   );
 }

@@ -22,7 +22,7 @@ export const ConteudoSocios: Socio[] = [
         nome: "Enéas Zamboni",
         atuacao: "Lorem ispsum",
         descritivo: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        foto: ""
+        foto: luiza.src,
     },
     {
         nome: "Luiza Zamboni",
@@ -32,7 +32,7 @@ export const ConteudoSocios: Socio[] = [
     },
     {
         nome: "Caio Zamboni",
-        foto: "",
+        foto: luiza.src,
         atuacao: "Lorem ispsum",
         descritivo: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
@@ -49,14 +49,14 @@ export const EmpresasInvestidas: EmpresaInvestidaProps[] = [
     {
         nome: "Lorem",
         description: "",
-        logo: "",
+        logo: logoUX,
         areaAtuacao: "",
         link: ""
     },
     {
         nome: "Lorem",
         description: "",
-        logo: "",
+        logo: logoUX,
         areaAtuacao: "",
         link: ""
     }

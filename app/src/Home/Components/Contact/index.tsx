@@ -77,8 +77,9 @@ function Contact() {
                 <div className="w-full h-full flex-col gap-4 flex ">
                     <div className="h-[1px] lg:mt-8 w-auto gap-2 flex ">
                         <div className="w-[20px] h-full rounded bg-white"></div>
-                        <div className="w-[20px] h-full rounded bg-white"></div>
                         <div className="w-[95%] rounded h-full bg-white"></div>
+                        <div className="w-[20px] h-full rounded bg-white"></div>
+
 
                     </div>
                     <div className="w-full h-auto flex items-center justify-between">

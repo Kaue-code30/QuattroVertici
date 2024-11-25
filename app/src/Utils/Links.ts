@@ -29,20 +29,35 @@ interface LinksHeaderProps {
 
 const LinksHeader: LinksHeaderProps[] = [
     {
-        text: "Link 1",
-        link: "/"
+        text: "Quem somos",
+        link: "/#quem-somos"
     },
     {
-        text: "Link 2",
-        link: "/"
+        text: "Sócios",
+        link: "/#socios"
     },
     {
-        text: "Link 3",
-        link: "/"
+        text: "Empresas",
+        link: "/#empresas"
     },
     {
-        text: "Link 4",
-        link: "/"
+        text: "Contato",
+        link: "/#contato"
+    },
+]
+
+export const EmpresasIvestidasLinks: LinksHeaderProps[] = [
+    {
+        text: "UX Group",
+        link: "https://uxgroup.com.br"
+    },
+    {
+        text: "Empresa 2",
+        link: "/#"
+    },
+    {
+        text: "Empresa 3",
+        link: "/#"
     },
 ]
 

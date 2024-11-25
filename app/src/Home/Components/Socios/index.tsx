@@ -19,7 +19,7 @@ function Socios() {
     }
 
     return (
-        <section className="w-full h-auto flex items-center justify-center bg-white pt-[80px] pb-[100px]">
+        <section id="socios" className="w-full h-auto flex items-center justify-center bg-white pt-[80px] pb-[100px]">
             <div className="max-w-[1000px] h-full flex lg:flex-row flex-col-reverse  items-center lg:gap-12 justify-start w-full ">
 
                 <div className=" w-4/5 lg:w-1/2 lg:absolute items-center justify-start lg:p-0 p-5 lg:pl-10 lg:left-[50%] bg-[#ededed8c] shadow rounded-2xl flex  h-[400px]">

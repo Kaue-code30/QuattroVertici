@@ -2,7 +2,7 @@
 
 function AboutUs() {
     return (
-        <section className="w-full h-auto flex items-center justify-center bg-white pt-[100px] pb-[30px]">
+        <section id="quem-somos" className="w-full h-auto flex items-center justify-center bg-white pt-[100px] pb-[30px]">
             <div className="max-w-[1000px] h-full flex flex-col items-start gap-3 justify-start w-4/5 lg:w-full ">
                 <h1 className="text-lg">
                     Quem somos

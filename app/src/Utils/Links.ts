@@ -1,5 +1,6 @@
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 
 interface LinksRedesProps {
@@ -15,6 +16,17 @@ export const RedeSocial: LinksRedesProps[] = [
     },
     {
         icon: FaFacebook,
+        link: "/"
+    },
+]
+
+export const RedeSocialEneas: LinksRedesProps[] = [
+    {
+        icon: FaInstagram,
+        link: "/"
+    },
+    {
+        icon: FaLinkedin,
         link: "/"
     },
 ]

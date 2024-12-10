@@ -17,6 +17,13 @@ interface EmpresaInvestidaProps {
     link: string
 }
 
+interface CardMidiaProps {
+    photo: string;
+    titulo: string;
+    text: string,
+    link: string
+}
+
 export const ConteudoSocios: Socio[] = [
     {
         nome: "Enéas Zamboni",
@@ -60,4 +67,25 @@ export const EmpresasInvestidas: EmpresaInvestidaProps[] = [
         areaAtuacao: "",
         link: ""
     }
+]
+
+export const ConteudoCardsMidia : CardMidiaProps[] = [
+    {
+        titulo:"UX Group",
+        photo:"lll",
+        text:"A UX atua como agente de transformação de ponta a ponta nas etapas de venda dos clientes,",
+        link:""
+    },
+    {
+        titulo:"UX Group",
+        photo:"lll",
+        text:"A UX atua como agente de transformação de ponta a ponta nas etapas de venda dos clientes,",
+        link:""
+    },
+    {
+        titulo:"UX Group",
+        photo:"lll",
+        text:"A UX atua como agente de transformação de ponta a ponta nas etapas de venda dos clientes,",
+        link:""
+    },
 ]

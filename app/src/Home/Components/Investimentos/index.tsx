@@ -5,13 +5,14 @@ import { HiOutlineLink } from "react-icons/hi";
 import banner from "@/app/src/Home/Assets/bannerVertici.jpg"
 import { motion } from "framer-motion"; // Importando o framer-motion para animações
 import Image from "next/image";
+import { RedeSocial } from "@/app/src/Utils/Links";
 
 function Investidores() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
 
     return (
-        <section id="empresas" className="w-full h-auto flex items-center justify-center bg-white pt-[80px] pb-[100px]">
+        <section id="empresas" className="w-full h-auto flex items-center justify-center bg-white pt-[80px] pb-[50px]">
             <div className="max-w-[1000px] h-full flex flex-col  items-start gap-3 justify-start w-4/5 lg:w-full">
                 <h1 className="text-3xl">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -26,6 +27,7 @@ function Investidores() {
                         ))
                     }
                 </ul>
+
 
                 <div className="h-auto lg:h-[650px] flex flex-col lg:flex-row gap-3 py-5 lg:py-10 w-full ">
                     <motion.div
@@ -42,6 +44,13 @@ function Investidores() {
                         <h3 className="text-gray-500 text-sm">
                             {EmpresasInvestidas[currentIndex].areaAtuacao}
                         </h3>
+                        <div className="w-auto py-2 flex text-xl gap-2 h-auto">
+                            {
+                                RedeSocial.map((data, key) => (
+                                    <Link target="_blank" className="hover:scale-90 transition duration-300" key={key} href={data.link}><data.icon></data.icon></Link>
+                                ))
+                            }
+                        </div>
                         <p className="lg:w-[90%]">
                             {EmpresasInvestidas[currentIndex].description}
                         </p>
